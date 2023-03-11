@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs
 
 website:
   title: "Detecting Credit Card Fraud with Machine Learning"
@@ -14,6 +15,3 @@ format:
   html:
     theme: cyborg
     css: styles.css
-
-
-
