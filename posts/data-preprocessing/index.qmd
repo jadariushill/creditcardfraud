@@ -1,0 +1,9 @@
+---
+title: "Data Preprocessing"
+author: "Jadarius Hill"
+date: "2023-02-26"
+categories: [project, machine learning, data, feature scaling, preprocessing, imbalanced data]
+image: "preprocessing.png"
+---
+
+Luckily for me, the dataset has zero null data points, which saves me some additional work! The target column is already encoded too (0 as non-fraud and 1 as fraud). I do, however, need to scale the time and amount columns as the other columns are already scaled due to the PCA that was conducted on them. In order to do this, I utilized the `StandardScaler` class from the `sklearn.preprocessing` library. I also went ahead and split the data into a training and test dataset using the `train_test_split` method from the `sklearn.model_selection`. I split the data 70/30, with 70% being the training dataset and the remaining 30% constituting the test dataset. This does cause an issue, however, since the data is so heavily imbalanced. Stayed tuned to see how I overcame this.

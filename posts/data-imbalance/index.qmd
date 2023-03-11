@@ -1,0 +1,15 @@
+---
+title: "Dealing with Imbalanced Data"
+author: "Jadarius Hill"
+date: "2023-02-28"
+categories: [project, machine learning, data, fraud, financial, transactions, credit cards, imbalanced data, random oversampling, random undersampling]
+image: "imbalance.jpeg"
+---
+
+In order to account for the heavy imbalance in non-fraudulent transactions to fraudulent transactions, I utitlized both the `RandomUnderSampler` and the `RandomOverSampler` classes from the `imblearn` library. Both samplers take an `sampling_strategy` input parameter that allow us to specify a percentage to over/under sample by. I will use both undersampling and oversampling techniques and compare the results.
+
+![](sampling.png)
+
+Undersampling occurs when you take a smaller sample of the majority class (in this case, the majority class is nonfraudulent transactions) in order to create a smaller, but more balanced dataset.
+
+Oversampling occurs when you take a large sample of the minority class by duplicating minority class rows (in this case, the minority class is fraudulent transactions) in order to create a larger, but more balanced dataset.

@@ -1,0 +1,15 @@
+---
+title: "Feature Selection"
+author: "Jadarius Hill"
+date: "2023-03-01"
+categories: [project, machine learning, data, fraud, financial, transactions, credit cards, feature selection, heat map]
+image: "feature.png"
+---
+
+Feature selection is one of the most important steps of creating a machine learning model; it allows for us to eliminate redudant features and features that have no impact on the target. Feature selection decreases over-fitting, reduces the amount of time to train the model, and additionally improves accuracy since misleading data in the non-essential features have been removed.
+
+In my project, I used a simple method to select the important features; I calculated the correlation between each of the features and the target. I then used the `seaborn` and `matplotlib` libraries to generate a heat map:
+
+![](heatmap.png)
+
+I then looked for features that had an absolute value of 0.4 or greater. Suprisingly to me, the amount of the transaction was not highly correlated to the target. I found these features to be the most correlated: `"V1","V2","V3","V4","V5","V6","V7","V9","V10","V11","V12","V14","V16","V17","V18"`

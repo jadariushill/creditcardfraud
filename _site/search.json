@@ -1,0 +1,107 @@
+[
+  {
+    "objectID": "posts/model-fitting and prediction/index.html",
+    "href": "posts/model-fitting and prediction/index.html",
+    "title": "Fittin’ Models and Predictin’ Data",
+    "section": "",
+    "text": "The five machine learning algorithms chosen for this project were:\nThe python library sklearn was used to implement each algorithm twice in order to create one machine learning model trained/fit with the undersampled dataset and one trained with the oversampled dataset. There was one algorithm, SVM, that the oversampled training set never seemed to converge - this model was eliminated.\nAt the bottom of the page are some brief explanations on how each algorithm works."
+  },
+  {
+    "objectID": "posts/model-fitting and prediction/index.html#logistic-regression",
+    "href": "posts/model-fitting and prediction/index.html#logistic-regression",
+    "title": "Fittin’ Models and Predictin’ Data",
+    "section": "Logistic Regression:",
+    "text": "Logistic Regression:\nLogistic Regression is a classification model that is used to predict a binary outcome based on one or more predictor variables. Logistic Regression attempts to find parameter values to minimize the cost function, which is the negative log-likelihood function."
+  },
+  {
+    "objectID": "posts/model-fitting and prediction/index.html#svm",
+    "href": "posts/model-fitting and prediction/index.html#svm",
+    "title": "Fittin’ Models and Predictin’ Data",
+    "section": "SVM:",
+    "text": "SVM:\nThe Support Vector Machine (SVM) algorithm is a supervised learning algorithm used for both classification and regression. SVM looks to find a decision boundary that maximizes the margin between classes since decision boundaries with large margins tend to have lower generalization error and tend to generalize better to unseen data. SVM allows us to find decision boundaries with large margins, which tend to have lower generalization error. SVMs also allow us to deal with nonlineraly separable data using slack variables."
+  },
+  {
+    "objectID": "posts/model-fitting and prediction/index.html#decision-tree",
+    "href": "posts/model-fitting and prediction/index.html#decision-tree",
+    "title": "Fittin’ Models and Predictin’ Data",
+    "section": "Decision Tree:",
+    "text": "Decision Tree:\nA Decision Tree is a supervised learning algorithm used for both classification and regression and resembles a tree structure. The objective of the Decision Tree algorithm is to maximize information gain at each split in the tree. Each branch represents an outcome of a test based on a feature of the training set. At the root node, the feature with the highest predictive power is used to split the tree. For each decision/internal node, a feature of the dataset is tested against a certain value and the tree is traveled based on the results. Once a leaf node is reached, a condition to stop spliting is achieved and a prediction is made. If the algorithm is running as regression, the mean of the response for observations that fall in this region are returned. Otherwise, the mode of the response (the target label that occurs the most) is returned."
+  },
+  {
+    "objectID": "posts/model-fitting and prediction/index.html#knn",
+    "href": "posts/model-fitting and prediction/index.html#knn",
+    "title": "Fittin’ Models and Predictin’ Data",
+    "section": "KNN:",
+    "text": "KNN:\nThe K-Nearest Neighbors is a supervised learning algorithm that can be used for both classification and regression. KNN works by loading all the data and for each new point, KNN calculates the distance of the point from all points and sorts the distances in ascending order. The K number of points with the smallest distances are selected with their corresponding labels. If we are using KNN for regression, the mean of the K labels will be returned. Otherwise, the mode classification label. If the error of the test points are not statisfying, we can repeat with process after selecting a new K value."
+  },
+  {
+    "objectID": "posts/model-fitting and prediction/index.html#random-forest",
+    "href": "posts/model-fitting and prediction/index.html#random-forest",
+    "title": "Fittin’ Models and Predictin’ Data",
+    "section": "Random Forest:",
+    "text": "Random Forest:\nThe Random Forest is a supervised learning algorithm can be used for regression and classifcation. The Random Forest algorithm acts as multiple decision trees put together. Each individual tree in the forest outputs a prediction and the prediction with the most votes becomes the prediction of the whole forest."
+  },
+  {
+    "objectID": "posts/project-breakdown/index.html",
+    "href": "posts/project-breakdown/index.html",
+    "title": "To Fraud or Not To Fraud",
+    "section": "",
+    "text": "In order to keep its customers safe, a financial instution must possess the ability to detect and block fraudlent transactions. This keeps their customer attrition low as customers would not be erroneously charged for purchases they did not make. Creating models to accurately detect fraudlent transactions proves to be extremely difficult as training datasets tend to be heavily imbalance due to a significantly higher amount of non-fraudulent activity than fraudulent. This project aims to address this problem by using various machine learning techniques to create a model to predict fraudulent credit card activity."
+  },
+  {
+    "objectID": "posts/feature-selection/index.html",
+    "href": "posts/feature-selection/index.html",
+    "title": "Feature Selection",
+    "section": "",
+    "text": "Feature selection is one of the most important steps of creating a machine learning model; it allows for us to eliminate redudant features and features that have no impact on the target. Feature selection decreases over-fitting, reduces the amount of time to train the model, and additionally improves accuracy since misleading data in the non-essential features have been removed.\nIn my project, I used a simple method to select the important features; I calculated the correlation between each of the features and the target. I then used the seaborn and matplotlib libraries to generate a heat map:\n\nI then looked for features that had an absolute value of 0.4 or greater. Suprisingly to me, the amount of the transaction was not highly correlated to the target. I found these features to be the most correlated: \"V1\",\"V2\",\"V3\",\"V4\",\"V5\",\"V6\",\"V7\",\"V9\",\"V10\",\"V11\",\"V12\",\"V14\",\"V16\",\"V17\",\"V18\""
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Is this thing on?",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nIf you’re reading this, this means my blog is up and running! I’ve managed to get Quarto installed and successfully deployed my Quarto blog to GitHub."
+  },
+  {
+    "objectID": "posts/data-preprocessing/index.html",
+    "href": "posts/data-preprocessing/index.html",
+    "title": "Data Preprocessing",
+    "section": "",
+    "text": "Luckily for me, the dataset has zero null data points, which saves me some additional work! The target column is already encoded too (0 as non-fraud and 1 as fraud). I do, however, need to scale the time and amount columns as the other columns are already scaled due to the PCA that was conducted on them. In order to do this, I utilized the StandardScaler class from the sklearn.preprocessing library. I also went ahead and split the data into a training and test dataset using the train_test_split method from the sklearn.model_selection. I split the data 70/30, with 70% being the training dataset and the remaining 30% constituting the test dataset. This does cause an issue, however, since the data is so heavily imbalanced. Stayed tuned to see how I overcame this."
+  },
+  {
+    "objectID": "posts/results/index.html",
+    "href": "posts/results/index.html",
+    "title": "THE RESULTS ARE IN",
+    "section": "",
+    "text": "Thxs"
+  },
+  {
+    "objectID": "posts/data-imbalance/index.html",
+    "href": "posts/data-imbalance/index.html",
+    "title": "Dealing with Imbalanced Data",
+    "section": "",
+    "text": "In order to account for the heavy imbalance in non-fraudulent transactions to fraudulent transactions, I utitlized both the RandomUnderSampler and the RandomOverSampler classes from the imblearn library. Both samplers take an sampling_strategy input parameter that allow us to specify a percentage to over/under sample by. I will use both undersampling and oversampling techniques and compare the results.\n\nUndersampling occurs when you take a smaller sample of the majority class (in this case, the majority class is nonfraudulent transactions) in order to create a smaller, but more balanced dataset.\nOversampling occurs when you take a large sample of the minority class by duplicating minority class rows (in this case, the minority class is fraudulent transactions) in order to create a larger, but more balanced dataset."
+  },
+  {
+    "objectID": "posts/data/index.html",
+    "href": "posts/data/index.html",
+    "title": "Dataset Selection",
+    "section": "",
+    "text": "This project will utilize the dataset publicly available on Kaggle that contains credit card transactions made by European cardholders in September of 2013. The full dataset is available at https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud. The dataset includes 284,807 records, with only approximately 0.172% (492) of those records being classified as positive (fraudulent) and 284,315 non-fraudulent records. This dataset will provide an unique challenge due to the data being highly imbalanced, skewed heavily towards non-fraudulent activity.\nThere are 31 columns in the dataset with 28 of them having undergone a Principal Component Analysis (PCA) to reduce dimensionality (except for the time, amount, and class columns). This also means the columns prefixed with ‘V’ are already scaled as that is a prereq for PCA."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Credit Card Fraud Detection",
+    "section": "",
+    "text": "THE RESULTS ARE IN\n\n\n\n\n\n\n\nproject\n\n\nmachine learning\n\n\ndata\n\n\nfraud\n\n\nfinancial\n\n\ntransactions\n\n\ncredit cards\n\n\nresults\n\n\n\n\n\n\n\n\n\n\n\nMar 7, 2023\n\n\nJadarius Hill\n\n\n\n\n\n\n  \n\n\n\n\nFittin’ Models and Predictin’ Data\n\n\n\n\n\n\n\nproject\n\n\nmachine learning\n\n\ndata\n\n\nfraud\n\n\nfinancial\n\n\ntransactions\n\n\ncredit cards\n\n\nfitting\n\n\nKNN\n\n\nSVM\n\n\nRandom Forest\n\n\nDecision Tree\n\n\nLogistic Regression\n\n\ntraining\n\n\nmodel training\n\n\n\n\n\n\n\n\n\n\n\nMar 3, 2023\n\n\nJadarius Hill\n\n\n\n\n\n\n  \n\n\n\n\nFeature Selection\n\n\n\n\n\n\n\nproject\n\n\nmachine learning\n\n\ndata\n\n\nfraud\n\n\nfinancial\n\n\ntransactions\n\n\ncredit cards\n\n\nfeature selection\n\n\nheat map\n\n\n\n\n\n\n\n\n\n\n\nMar 1, 2023\n\n\nJadarius Hill\n\n\n\n\n\n\n  \n\n\n\n\nDealing with Imbalanced Data\n\n\n\n\n\n\n\nproject\n\n\nmachine learning\n\n\ndata\n\n\nfraud\n\n\nfinancial\n\n\ntransactions\n\n\ncredit cards\n\n\nimbalanced data\n\n\nrandom oversampling\n\n\nrandom undersampling\n\n\n\n\n\n\n\n\n\n\n\nFeb 28, 2023\n\n\nJadarius Hill\n\n\n\n\n\n\n  \n\n\n\n\nData Preprocessing\n\n\n\n\n\n\n\nproject\n\n\nmachine learning\n\n\ndata\n\n\nfeature scaling\n\n\npreprocessing\n\n\nimbalanced data\n\n\n\n\n\n\n\n\n\n\n\nFeb 26, 2023\n\n\nJadarius Hill\n\n\n\n\n\n\n  \n\n\n\n\nDataset Selection\n\n\n\n\n\n\n\nproject\n\n\nmachine learning\n\n\ndata\n\n\nfraud\n\n\nfinancial\n\n\ntransactions\n\n\ncredit cards\n\n\nKaggle\n\n\nEuropean\n\n\ndataset\n\n\nPCA\n\n\nimbalanced data\n\n\n\n\n\n\n\n\n\n\n\nFeb 23, 2023\n\n\nJadarius Hill\n\n\n\n\n\n\n  \n\n\n\n\nTo Fraud or Not To Fraud\n\n\n\n\n\n\n\nproject\n\n\nmachine learning\n\n\ndata\n\n\nfraud\n\n\nfinancial\n\n\ntransactions\n\n\ncredit cards\n\n\nmodel\n\n\n\n\n\n\n\n\n\n\n\nFeb 22, 2023\n\n\nJadarius Hill\n\n\n\n\n\n\n  \n\n\n\n\nIs this thing on?\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nFeb 20, 2023\n\n\nJadarius Hill\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  }
+]

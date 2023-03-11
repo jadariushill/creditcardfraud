@@ -1,0 +1,34 @@
+---
+title: "Fittin' Models and Predictin' Data"
+author: "Jadarius Hill"
+date: "2023-03-03"
+categories: [project, machine learning, data, fraud, financial, transactions, credit cards, fitting, KNN, SVM, Random Forest, Decision Tree, Logistic Regression, training, model training]
+image: "fitting.png"
+---
+
+The five machine learning algorithms chosen for this project were:
+
+* Logisitic Regression:
++ Support Vector Machines (SVM)
+* K-Nearest Neighbors (KNN)
+* Decision Tree
+* Random Forest
+
+The python library `sklearn` was used to implement each algorithm twice in order to create one machine learning model trained/fit with the undersampled dataset and one trained with the oversampled dataset. There was one algorithm, SVM, that the oversampled training set never seemed to converge - this model was eliminated.
+
+At the bottom of the page are some brief explanations on how each algorithm works.
+
+## Logistic Regression:
+Logistic Regression is a classification model that is used to predict a binary outcome based on one or more predictor variables. Logistic Regression attempts to find parameter values to minimize the cost function, which is the negative log-likelihood function.
+
+## SVM:
+The Support Vector Machine (SVM) algorithm is a supervised learning algorithm used for both classification and regression. SVM looks to find a decision boundary that maximizes the margin between classes since decision boundaries with large margins tend to have lower generalization error and tend to generalize better to unseen data. SVM allows us to find decision boundaries with large margins, which tend to have lower generalization error. SVMs also allow us to deal with nonlineraly separable data using slack variables.
+
+## Decision Tree:
+A Decision Tree is a supervised learning algorithm used for both classification and regression and resembles a tree structure. The objective of the Decision Tree algorithm is to maximize information gain at each split in the tree. Each branch represents an outcome of a test based on a feature of the training set. At the root node, the feature with the highest predictive power is used to split the tree. For each decision/internal node, a feature of the dataset is tested against a certain value and the tree is traveled based on the results. Once a leaf node is reached, a condition to stop spliting is achieved and a prediction is made. If the algorithm is running as regression, the mean of the response for observations that fall in this region are returned. Otherwise, the mode of the response (the target label that occurs the most) is returned.
+
+## KNN:
+The K-Nearest Neighbors is a supervised learning algorithm that can be used for both classification and regression. KNN works by loading all the data and for each new point, KNN calculates the distance of the point from all points and sorts the distances in ascending order. The K number of points with the smallest distances are selected with their corresponding labels. If we are using KNN for regression, the mean of the K labels will be returned. Otherwise, the mode classification label. If the error of the test points are not statisfying, we can repeat with process after selecting a new K value.
+
+## Random Forest:
+The Random Forest is a supervised learning algorithm can be used for regression and classifcation. The Random Forest algorithm acts as multiple decision trees put together. Each individual tree in the forest outputs a prediction and the prediction with the most votes becomes the prediction of the whole forest. 

@@ -1,0 +1,9 @@
+---
+title: "THE RESULTS ARE IN"
+author: "Jadarius Hill"
+date: "2023-03-07"
+categories: [project, machine learning, data, fraud, financial, transactions, credit cards, results]
+image: "results.jpg"
+---
+
+Thxs

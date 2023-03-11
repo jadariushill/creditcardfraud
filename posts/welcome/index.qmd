@@ -1,0 +1,12 @@
+---
+title: "Is this thing on?"
+author: "Jadarius Hill"
+date: "2023-02-20"
+categories: [news]
+---
+
+This is the first post in a Quarto blog. Welcome!
+
+![](thumbnail.jpg)
+
+If you're reading this, this means my blog is up and running! I've managed to get Quarto installed and successfully deployed my Quarto blog to GitHub.

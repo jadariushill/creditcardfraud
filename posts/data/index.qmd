@@ -1,0 +1,11 @@
+---
+title: "Dataset Selection"
+author: "Jadarius Hill"
+date: "2023-02-23"
+categories: [project, machine learning, data, fraud, financial, transactions, credit cards, Kaggle, European, dataset, PCA, imbalanced data]
+image: "data-science.png"
+---
+
+This project will utilize the dataset publicly available on Kaggle that contains credit card transactions made by European cardholders in September of 2013. The full dataset is available at https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud. The dataset includes 284,807 records, with only approximately 0.172% (492) of those records being classified as positive (fraudulent) and 284,315 non-fraudulent records. This dataset will provide an unique challenge due to the data being highly imbalanced, skewed heavily towards non-fraudulent activity.
+
+There are 31 columns in the dataset with 28 of them having undergone a Principal Component Analysis (PCA) to reduce dimensionality (except for the time, amount, and class columns). This also means the columns prefixed with 'V' are already scaled as that is a prereq for PCA.

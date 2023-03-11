@@ -1,0 +1,10 @@
+---
+title: "To Fraud or Not To Fraud"
+author: "Jadarius Hill"
+date: "2023-02-22"
+categories: [project, machine learning, data, fraud, financial, transactions, credit cards, model]
+image: "Credit-card-fraud-top.jpg"
+---
+
+In order to keep its customers safe, a financial instution must possess the ability to detect and block fraudlent transactions. This keeps their customer attrition low as customers would not be erroneously charged for purchases they did not make. Creating models to accurately detect fraudlent transactions proves to be extremely difficult as training datasets tend to be heavily imbalance due to a significantly higher amount of non-fraudulent activity than fraudulent.
+This project aims to address this problem by using various machine learning techniques to create a model to predict fraudulent credit card activity.
