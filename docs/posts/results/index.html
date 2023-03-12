@@ -150,9 +150,155 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>Thxs</p>
+<p>In terms of accuracy, it appears that the oversampled version of the algorithms performed better than the undersampled algorithms on the same test dataset. However, because of the severly imbalanced dataset, the Area Under the Precision-Recall Curve (AUPRC) is a better metric to compare. For the Logistic Regression and Decision Tree algorithms, the oversampled version performed better. For the KNN and Random Forest Algorithms, the undersampled versions performed better. The algorithm that appeared to perform the best overall with the AUPRC metric was the oversampled version of the Logistic Regression algorithm. The algorithm that had the less amount of misclassifications, however, was the oversampled version of the Random Forest algorithm.</p>
+<section id="undersampled-results" class="level2">
+<h2 class="anchored" data-anchor-id="undersampled-results">Undersampled Results</h2>
+<table class="table">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 15%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 15%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: left;">Log. Reg.</th>
+<th style="text-align: left;">SVM</th>
+<th style="text-align: left;">Dec.&nbsp;Tree</th>
+<th style="text-align: left;">KNN</th>
+<th style="text-align: left;">Rand. For.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Accuracy</td>
+<td style="text-align: left;">0.96953525</td>
+<td style="text-align: left;">0.96088620</td>
+<td style="text-align: left;">0.94338916</td>
+<td style="text-align: left;">0.97251969</td>
+<td style="text-align: left;">0.95339583</td>
+</tr>
+<tr class="even">
+<td>ROC_AUC</td>
+<td style="text-align: left;">0.95438855</td>
+<td style="text-align: left;">0.95005652</td>
+<td style="text-align: left;">0.94129282</td>
+<td style="text-align: left;">0.95588336</td>
+<td style="text-align: left;">0.94630484</td>
+</tr>
+<tr class="odd">
+<td>Recall</td>
+<td style="text-align: left;">0.93918919</td>
+<td style="text-align: left;">0.93918919</td>
+<td style="text-align: left;">0.93918919</td>
+<td style="text-align: left;">0.93918919</td>
+<td style="text-align: left;">0.93918919</td>
+</tr>
+<tr class="even">
+<td>Precision</td>
+<td style="text-align: left;">0.05085986</td>
+<td style="text-align: left;">0.04003456</td>
+<td style="text-align: left;">0.02798470</td>
+<td style="text-align: left;">0.05609362</td>
+<td style="text-align: left;">0.03380350</td>
+</tr>
+<tr class="odd">
+<td>F1</td>
+<td style="text-align: left;">0.05085986</td>
+<td style="text-align: left;">0.07679558</td>
+<td style="text-align: left;">0.05434995</td>
+<td style="text-align: left;">0.10586443</td>
+<td style="text-align: left;">0.06525822</td>
+</tr>
+<tr class="even">
+<td>Num Misclass</td>
+<td style="text-align: left;">2603</td>
+<td style="text-align: left;">3342</td>
+<td style="text-align: left;">4837</td>
+<td style="text-align: left;">2348</td>
+<td style="text-align: left;">3982</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="oversampled-results" class="level2">
+<h2 class="anchored" data-anchor-id="oversampled-results">Oversampled Results</h2>
+<table class="table">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 15%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 15%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: left;">Log. Reg.</th>
+<th style="text-align: left;">SVM</th>
+<th style="text-align: left;">Dec.&nbsp;Tree</th>
+<th style="text-align: left;">KNN</th>
+<th style="text-align: left;">Rand. For.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Accuracy</td>
+<td style="text-align: left;">0.98094636</td>
+<td style="text-align: left;">———-</td>
+<td style="text-align: left;">0.98538207</td>
+<td style="text-align: left;">0.99913393</td>
+<td style="text-align: left;">0.99959037</td>
+</tr>
+<tr class="even">
+<td>ROC_AUC</td>
+<td style="text-align: left;">0.96010400</td>
+<td style="text-align: left;">———-</td>
+<td style="text-align: left;">0.94546312</td>
+<td style="text-align: left;">0.93211588</td>
+<td style="text-align: left;">0.90873689</td>
+</tr>
+<tr class="odd">
+<td>Recall</td>
+<td style="text-align: left;">0.93918919</td>
+<td style="text-align: left;">———-</td>
+<td style="text-align: left;">0.90540541</td>
+<td style="text-align: left;">0.86486486</td>
+<td style="text-align: left;">0.81756757</td>
+</tr>
+<tr class="even">
+<td>Precision</td>
+<td style="text-align: left;">0.07906712</td>
+<td style="text-align: left;">———-</td>
+<td style="text-align: left;">0.09788167</td>
+<td style="text-align: left;">0.70329670</td>
+<td style="text-align: left;">0.93798450</td>
+</tr>
+<tr class="odd">
+<td>F1</td>
+<td style="text-align: left;">0.14585519</td>
+<td style="text-align: left;">———-</td>
+<td style="text-align: left;">0.17666447</td>
+<td style="text-align: left;">0.77575758</td>
+<td style="text-align: left;">0.87364621</td>
+</tr>
+<tr class="even">
+<td>Num Misclass</td>
+<td style="text-align: left;">1628</td>
+<td style="text-align: left;">———-</td>
+<td style="text-align: left;">1249</td>
+<td style="text-align: left;">74</td>
+<td style="text-align: left;">35</td>
+</tr>
+</tbody>
+</table>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -6,4 +6,25 @@ categories: [project, machine learning, data, fraud, financial, transactions, cr
 image: "results.jpg"
 ---
 
-Thxs
+In terms of accuracy, it appears that the oversampled version of the algorithms performed better than the undersampled algorithms on the same test dataset. However, because of the severly imbalanced dataset, the Area Under the Precision-Recall Curve (AUPRC) is a better metric to compare. For the Logistic Regression and Decision Tree algorithms, the oversampled version performed better. For the KNN and Random Forest Algorithms, the undersampled versions performed better. The algorithm that appeared to perform the best overall with the AUPRC metric was the oversampled version of the Logistic Regression algorithm. The algorithm that had the less amount of misclassifications, however, was the oversampled version of the Random Forest algorithm.
+
+## Undersampled Results
+|             | Log. Reg.  | SVM        | Dec. Tree  | KNN        | Rand. For. |
+|---------    |:-----      |:------     |:------     |:-----      |:----       |
+| Accuracy    | 0.96953525 | 0.96088620 | 0.94338916 | 0.97251969 | 0.95339583 | 
+| ROC_AUC     | 0.95438855 | 0.95005652 | 0.94129282 | 0.95588336 | 0.94630484 | 
+| Recall      | 0.93918919 | 0.93918919 | 0.93918919 | 0.93918919 | 0.93918919 | 
+| Precision   | 0.05085986 | 0.04003456 | 0.02798470 | 0.05609362 | 0.03380350 | 
+| F1          | 0.05085986 | 0.07679558 | 0.05434995 | 0.10586443 | 0.06525822 | 
+| Num Misclass| 2603       | 3342       | 4837       | 2348       | 3982       | 
+
+
+## Oversampled Results
+|             | Log. Reg.  | SVM        | Dec. Tree  | KNN        | Rand. For. |
+|---------    |:-----      |:------     |:------     |:-----      |:----       |
+| Accuracy    | 0.98094636 | ---------- | 0.98538207 | 0.99913393 | 0.99959037 | 
+| ROC_AUC     | 0.96010400 | ---------- | 0.94546312 | 0.93211588 | 0.90873689 | 
+| Recall      | 0.93918919 | ---------- | 0.90540541 | 0.86486486 | 0.81756757 | 
+| Precision   | 0.07906712 | ---------- | 0.09788167 | 0.70329670 | 0.93798450 | 
+| F1          | 0.14585519 | ---------- | 0.17666447 | 0.77575758 | 0.87364621 | 
+| Num Misclass| 1628       | ---------- | 1249       | 74         | 35         | 

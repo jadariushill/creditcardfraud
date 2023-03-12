@@ -74,7 +74,21 @@
     "href": "posts/results/index.html",
     "title": "THE RESULTS ARE IN",
     "section": "",
-    "text": "Thxs"
+    "text": "In terms of accuracy, it appears that the oversampled version of the algorithms performed better than the undersampled algorithms on the same test dataset. However, because of the severly imbalanced dataset, the Area Under the Precision-Recall Curve (AUPRC) is a better metric to compare. For the Logistic Regression and Decision Tree algorithms, the oversampled version performed better. For the KNN and Random Forest Algorithms, the undersampled versions performed better. The algorithm that appeared to perform the best overall with the AUPRC metric was the oversampled version of the Logistic Regression algorithm. The algorithm that had the less amount of misclassifications, however, was the oversampled version of the Random Forest algorithm."
+  },
+  {
+    "objectID": "posts/results/index.html#undersampled-results",
+    "href": "posts/results/index.html#undersampled-results",
+    "title": "THE RESULTS ARE IN",
+    "section": "Undersampled Results",
+    "text": "Undersampled Results\n\n\n\n\n\n\n\n\n\n\n\n\nLog. Reg.\nSVM\nDec. Tree\nKNN\nRand. For.\n\n\n\n\nAccuracy\n0.96953525\n0.96088620\n0.94338916\n0.97251969\n0.95339583\n\n\nROC_AUC\n0.95438855\n0.95005652\n0.94129282\n0.95588336\n0.94630484\n\n\nRecall\n0.93918919\n0.93918919\n0.93918919\n0.93918919\n0.93918919\n\n\nPrecision\n0.05085986\n0.04003456\n0.02798470\n0.05609362\n0.03380350\n\n\nF1\n0.05085986\n0.07679558\n0.05434995\n0.10586443\n0.06525822\n\n\nNum Misclass\n2603\n3342\n4837\n2348\n3982"
+  },
+  {
+    "objectID": "posts/results/index.html#oversampled-results",
+    "href": "posts/results/index.html#oversampled-results",
+    "title": "THE RESULTS ARE IN",
+    "section": "Oversampled Results",
+    "text": "Oversampled Results\n\n\n\n\n\n\n\n\n\n\n\n\nLog. Reg.\nSVM\nDec. Tree\nKNN\nRand. For.\n\n\n\n\nAccuracy\n0.98094636\n———-\n0.98538207\n0.99913393\n0.99959037\n\n\nROC_AUC\n0.96010400\n———-\n0.94546312\n0.93211588\n0.90873689\n\n\nRecall\n0.93918919\n———-\n0.90540541\n0.86486486\n0.81756757\n\n\nPrecision\n0.07906712\n———-\n0.09788167\n0.70329670\n0.93798450\n\n\nF1\n0.14585519\n———-\n0.17666447\n0.77575758\n0.87364621\n\n\nNum Misclass\n1628\n———-\n1249\n74\n35"
   },
   {
     "objectID": "posts/data-imbalance/index.html",
@@ -102,6 +116,6 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this blog"
+    "text": "This blog follows the development of a machine learning model that possess the ability to detect credit card fraud."
   }
 ]

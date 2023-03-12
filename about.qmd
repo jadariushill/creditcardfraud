@@ -13,4 +13,4 @@ about:
 
 ---
 
-About this blog
+This blog follows the development of a machine learning model that possess the ability to detect credit card fraud.
