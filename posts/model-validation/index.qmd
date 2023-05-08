@@ -3,7 +3,7 @@ title: "Model Validation/Generalizability"
 author: "Jadarius Hill"
 date: "2023-03-20"
 categories: [project, machine learning, data, fraud, financial, transactions, credit cards, results, Stratified K-Fold Cross Validation ]
-image: "results.jpg"
+image: "skfcv.png"
 ---
 
 
@@ -16,30 +16,20 @@ Stratified K-Fold Cross Validation consists of splitting the training dataset in
 #### Undersampled Logistic Regression Stratified K-Fold Results
 
 |        |  Accuracy  |  Precision |   Recall   |  F1-Score  |   ROC_AUC  |
-
-|-------------------------------------------------------------------------|
-
+|--------|------------|------------|------------|------------|------------|
 |Min     | 0.85294118 | 0.90000000 | 0.79411765 | 0.84375000 | 0.85294118 |
-
 |Mean    | 0.92291134 | 0.95591223 | 0.88655462 | 0.91897729 | 0.92289916 |
-
 |Max     | 0.97101449 | 1.00000000 | 1.00000000 | 0.97142857 | 0.97142857 |
-
 |Std Dev | 0.04132324 | 0.03258644 | 0.06628329 | 0.04498229 | 0.04155258 |
 
 
 #### Oversampled Logistic Regression Stratified K-Fold Results
 
 |        |  Accuracy  |  Precision |   Recall   |  F1-Score  |   ROC_AUC  |
-
-|-------------------------------------------------------------------------|
-
+|--------|------------|------------|------------|------------|------------|
 |Min     | 0.93621801 | 0.96755605 | 0.87273902 | 0.91849222 | 0.92669711 |
-
 |Mean    | 0.93842475 | 0.96955605 | 0.87803093 | 0.92152430 | 0.92936568 |
-
 |Max     | 0.94002897 | 0.97059525 | 0.88185472 | 0.92366154 | 0.93125497 |
-
 |Std Dev | 0.00109894 | 0.00087789 | 0.00261670 | 0.00149773 | 0.00131296 |
 
 The oversampled version of Logistic Regression had a lower standard deviation for all metrics - this indicates that this model was more generalizable than the undersampled version. The oversampled version also appeared to have performed better on average when comparing the average metrics. The maximum standard deviation between the metrics for the oversampled algorithm was 0.26%, which is fairly low.
@@ -48,15 +38,10 @@ The oversampled version of Logistic Regression had a lower standard deviation fo
 #### Undersampled SVM Stratified K-Fold Results
 
 |        |  Accuracy  |  Precision |   Recall   |  F1-Score  |   ROC_AUC  |
-
-|-------------------------------------------------------------------------|
-
+|--------|------------|------------|------------|------------|------------|
 |Min     | 0.86956522 | 0.90625000 | 0.79411765 | 0.85714286 | 0.86848739 |
-
 |Mean    | 0.92440324 | 0.96196291 | 0.88378151 | 0.92039149 | 0.92441176 |
-
 |Max     | 0.98550725 | 1.00000000 | 1.00000000 | 0.98550725 | 0.98571429 |
-
 |Std Dev | 0.03774823 | 0.02776385 | 0.06120169 | 0.04075078 | 0.03784240 |
 
 
@@ -67,30 +52,20 @@ The oversampled SVM model did not seem to reach convergence, therefore, it was e
 #### Undersampled Decision Tree Stratified K-Fold Results
 
 |        |  Accuracy  |  Precision |   Recall   |  F1-Score  |   ROC_AUC  |
-
-|-------------------------------------------------------------------------|
-
+|--------|------------|------------|------------|------------|------------|
 |Min     | 0.84057971 | 0.88235294 | 0.73529412 | 0.81967213 | 0.83907563 |
-
 |Mean    | 0.90843990 | 0.94378315 | 0.86924370 | 0.90312280 | 0.90852941 |
-
 |Max     | 0.97101449 | 1.00000000 | 0.97058824 | 0.97058824 | 0.97142857 |
-
 |Std Dev | 0.04695175 | 0.03825775 | 0.08084470 | 0.05238315 | 0.04717500 |
 
 
 #### Oversampled Decision Tree Stratified K-Fold Results
 
 |        |  Accuracy  |  Precision |   Recall   |  F1-Score  |   ROC_AUC  |
-
-|-------------------------------------------------------------------------|
-
+|--------|------------|------------|------------|------------|------------|
 |Min     | 0.94697641 | 0.97667161 | 0.89032443 | 0.93256146 | 0.93847947 |
-
 |Mean    | 0.94869567 | 0.97769141 | 0.89584678 | 0.93497814 | 0.94076833 |
-
 |Max     | 0.95040492 | 0.97922383 | 0.90030146 | 0.93730384 | 0.94289016 |
-
 |Std Dev | 0.00107561 | 0.00089188 | 0.00292652 | 0.00146693 | 0.00134064 |
 
 
@@ -101,29 +76,19 @@ The oversampled version of Decision Tree had a lower standard deviation for all 
 #### Undersampled KNN Stratified K-Fold Results
 
 |        |  Accuracy  |  Precision |   Recall   |  F1-Score  |   ROC_AUC  |
-
-|-------------------------------------------------------------------------|
-
+|--------|------------|------------|------------|------------|------------|
 |Min     | 0.88405797 | 0.93750000 | 0.79411765 | 0.87096774 | 0.88277311 |
-
 |Mean    | 0.92736573 | 0.96628898 | 0.88655462 | 0.92341842 | 0.92726891 |
-
 |Max     | 0.97101449 | 1.00000000 | 1.00000000 | 0.97142857 | 0.97142857 |
-
 |Std Dev | 0.02750084 | 0.02448254 | 0.05792592 | 0.03073669 | 0.02780132 |
 
 #### Oversampled KNN Stratified K-Fold Results
 
 |        |  Accuracy  |  Precision |   Recall   |  F1-Score  |   ROC_AUC  |
-
-|-------------------------------------------------------------------------|
-
+|--------|------------|------------|------------|------------|------------|
 |Min     | 0.99934975 | 0.99842328 | 1.00000000 | 0.99921102 | 0.99944729 |
-
 |Mean    | 0.99953300 | 0.99886721 | 1.00000000 | 0.99943327 | 0.99960305 |
-
 |Max     | 0.99973400 | 0.99935442 | 1.00000000 | 0.99967711 | 0.99977389 |
-
 |Std Dev | 0.00009785 | 0.00023714 | 0.00000000 | 0.00011870 | 0.00008317 |
 
 The oversampled version of KNN had a lower standard deviation for all metrics - this indicates that this model was more generalizable than the undersampled version. The oversampled version also appeared to have performed better on average when comparing the average metrics. The maximum standard deviation between the metrics for the oversampled algorithm was 0.023%, which is significantly low.
@@ -133,29 +98,19 @@ The oversampled version of KNN had a lower standard deviation for all metrics - 
 #### Undersampled Random Forest Stratified K-Fold Results
 
 |        |  Accuracy  |  Precision |   Recall   |  F1-Score  |   ROC_AUC  |
-
-|-------------------------------------------------------------------------|
-
+|--------|------------|------------|------------|------------|------------|
 |Min     | 0.85507246 | 0.88571429 | 0.73529412 | 0.83333333 | 0.85336134 |
-
 |Mean    | 0.92295396 | 0.96544001 | 0.87798319 | 0.91822273 | 0.92289916 |
-
 |Max     | 1.00000000 | 1.00000000 | 1.00000000 | 1.00000000 | 1.00000000 |
-
 |Std Dev | 0.04456269 | 0.03620635 | 0.07246972 | 0.04891441 | 0.04469540 |
 
 #### Oversampled Random Forest Stratified K-Fold Results
 
 |        |  Accuracy  |  Precision |   Recall   |  F1-Score  |   ROC_AUC  |
-
-|-------------------------------------------------------------------------|
-
+|--------|------------|------------|------------|------------|------------|
 |Min     | 0.99991133 | 0.99978470 | 1.00000000 | 0.99989234 | 0.99992463 |
-
 |Mean    | 0.99995862 | 0.99989952 | 1.00000000 | 0.99994976 | 0.99996483 |
-
 |Max     | 1.00000000 | 1.00000000 | 1.00000000 | 1.00000000 | 1.00000000 |
-
 |Std Dev | 0.00003014 | 0.00007319 | 0.00000000 | 0.00003660 | 0.00002562 |
 
 The oversampled version of Random Forest had a lower standard deviation for all metrics - this indicates that this model was more generalizable than the undersampled version. The oversampled version also appeared to have performed better on average when comparing the average metrics. The maximum standard deviation between the metrics for the oversampled algorithm was 0.0073%, which is significantly low.

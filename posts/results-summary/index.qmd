@@ -1,0 +1,9 @@
+---
+title: "Result Summary"
+author: "Jadarius Hill"
+date: "2023-03-20"
+categories: [project, machine learning, data, fraud, financial, transactions, credit cards, results]
+image: "summary.jpg"
+---
+
+Overall, the oversampled version of all algorithms performed better than their undersampled counterparts. Not only did the oversampled versions perform better, but they were also less sensitive to perturbations in the data and were more generalizable. The algorithm that was most insensitive/generalizable was the oversampled version of the Random Forest algorithm with a maximum standard deviation in metrics of 0.0073%.
